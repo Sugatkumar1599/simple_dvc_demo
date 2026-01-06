@@ -1,11 +1,12 @@
 import os
 
-dirs = [
+
+dirs =[
     os.path.join("data", "raw"),
-    os.path.join("data", "processed"),
+    os.path.join("data","processed"),
     "notebooks",
-    "src",
     "saved_models",
+    "src",
 ]
 
 for dir_ in dirs:
@@ -14,13 +15,12 @@ for dir_ in dirs:
         pass
 
 
-files_ = [
+files_ =[
     "dvc.yaml",
     "params.yaml",
-    "gitignore",
-    os.path.join("src", "__init__.py"),
-
+    ".gitignore",
+    os.path.join("src", "__init__.py")
 ]
-for file in files_:
-    with open(file, "w") as f:
+for file_ in files_:
+    with open(file_, "w") as f:
         pass
